@@ -118,7 +118,7 @@ public class BounceIndicator extends View {
             float dx = stickX - mLastX;
             float dy = stickY - mLastY;
             if (toStartScroller.isFinished())
-            toStartScroller.startScroll((int)mLastX, (int)mLastY, (int)dx, (int)dy);
+            toStartScroller.startScroll((int)mLastX, (int)mLastY, (int)dx, (int)dy,300);
         }
     }
 
@@ -127,7 +127,7 @@ public class BounceIndicator extends View {
             float dx = endX - startX;
             float dy = endY - startY;
             if (toEndScroller.isFinished()){
-                toEndScroller.startScroll((int) startX, (int) startY, (int) dx, (int) dy,10);
+                toEndScroller.startScroll((int) startX, (int) startY, (int) dx, (int) dy,300);
             }
         }
     }
